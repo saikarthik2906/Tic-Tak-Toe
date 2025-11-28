@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic-Tac-Toe — Dark Mode</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" role="application" aria-label="Tic Tac Toe Game">
+    <div class="left">
+      <header class="header">
+        <div>
+          <h1><span class="logo-dot" aria-hidden></span> Tic-Tac-Toe</h1>
+          <div class="meta">Two-player • Dark mode • Accessible</div>
+        </div>
+
+        <div class="meta" style="font-size:13px">A fun little web game</div>
+      </header>
+
+      <div class="board-wrap panel" aria-live="polite">
+        <div class="status">
+          <div class="turn" id="turnIndicator" aria-atomic="true">
+            <span id="turnBadge" class="badge x-badge" aria-hidden> X </span>
+            <span id="turnText">Player X's Turn</span>
+          </div>
+
+          <div class="controls-inline">
+            <button id="restartBtn" class="btn primary" title="Restart the game">Restart</button>
+            <button id="swapStartBtn" class="btn" title="Swap starting player (X/O)">Start: X</button>
+          </div>
+        </div>
+
+        <div class="board" id="board" role="grid" aria-label="Tic-Tac-Toe board">
+          <!-- Cells: keep as buttons for accessibility -->
+          <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1" tabindex="0"></button>
+          <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2" tabindex="0"></button>
+          <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3" tabindex="0"></button>
+          <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4" tabindex="0"></button>
+          <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5" tabindex="0"></button>
+          <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6" tabindex="0"></button>
+          <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7" tabindex="0"></button>
+          <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8" tabindex="0"></button>
+          <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9" tabindex="0"></button>
+        </div>
+
+        <footer class="note">
+          <div class="legend">
+            <div class="legend-dot x-dot"></div><div class="small">X — Neon</div>
+          </div>
+
+          <div class="legend" style="margin-left:10px">
+            <div class="legend-dot o-dot"></div><div class="small">O — Blue</div>
+          </div>
+        </footer>
+      </div>
+
+      <div class="panel info-panel">
+        <div>
+          <div style="font-weight:700">Game Info</div>
+          <div class="small">Play against a friend on the same device. Use keyboard (← → ↑ ↓ + Enter) or tap/click cells.</div>
+        </div>
+
+        <div style="text-align:right">
+          <div style="font-weight:800;font-size:22px">Have fun!</div>
+          <div class="small" style="margin-top:6px">Dark theme enabled</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="right">
+      <div class="panel">
+        <div style="font-weight:700;margin-bottom:8px">How to Play</div>
+        <div class="instructions">
+          <ol>
+            <li>Players take turns placing their marker (X or O) in an empty cell.</li>
+            <li>The first player to get 3 markers in a row (horizontal, vertical, diagonal) wins.</li>
+            <li>If all 9 cells are filled and no one has 3 in a row, the game is a draw.</li>
+            <li>Use <strong>Restart</strong> to play again. Use <strong>Start</strong> to change which player starts.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div style="font-weight:700;margin-bottom:8px">Controls</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div><strong>Click / Tap</strong> a cell to place your mark.</div>
+          <div><strong>Keyboard:</strong> Tab to a cell and press <kbd>Enter</kbd> or <kbd>Space</kbd>. Arrow keys move focus.</div>
+          <div><strong>Accessibility:</strong> Live region updates announce the winner.</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+          <div style="font-weight:700">Game Settings</div>
+          <div class="small" id="movesCounter">Moves: 0</div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:6px">
+          <button id="undoBtn" class="btn" title="Undo last move (one step)">Undo</button>
+          <button id="clearHistoryBtn" class="btn" title="Clear move history">Clear History</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Link to external script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
