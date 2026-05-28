@@ -1,65 +1,125 @@
-# Tic-Tak-Toe
+# 🎮 Tic-Tac-Toe — Dark Mode
 
-Tic-Tac-Toe — Dark Mode (HTML + CSS + JavaScript)
+A fully interactive, responsive, and modern **dark-themed Tic-Tac-Toe game** built using **HTML, CSS, and Vanilla JavaScript**.
 
-A fully interactive, responsive, dark-themed Tic-Tac-Toe game built using HTML, CSS, and Vanilla JavaScript.
-This project is designed as part of the ProU Technology Frontend Assessment.
+Designed with smooth animations, accessibility support, responsive layouts, and keyboard navigation for an enhanced gaming experience.
 
-📌 Features
-🎮 Game Functionality
+This project was developed as part of the **ProU Technology Frontend Assessment**.
 
-Two-player real-time gameplay (X vs O)
+---
 
-Turn indicator (Player X / Player O)
+## 🛠 Tech Stack
 
-Win detection (rows, columns, diagonals)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![Responsive Design](https://img.shields.io/badge/Responsive-Design-00C853?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-ARIA-blue?style=for-the-badge)
 
-Draw detection
+---
 
-Restart game
+## 📁 Project Structure
 
-Undo last move
+```bash id="7u4i0m"
+tic-tac-toe/
+│
+├── index.html      # Main game UI
+├── styles.css      # Dark mode styling & animations
+└── script.js       # Game logic and interactions
+```
 
-Move history clearing
+---
 
-Keyboard support (↑ ↓ ← → + Enter/Space)
+## 🚀 Features
 
-🎨 UI & UX
+## 🎮 Game Functionality
 
-Modern dark-mode theme
+* Two-player gameplay (X vs O)
+* Real-time turn indicator
+* Win detection:
 
-Neon colors for X and O
+  * Rows
+  * Columns
+  * Diagonals
+* Draw detection
+* Restart game support
+* Undo last move
+* Move history clearing
+* Keyboard navigation support
 
-Hover animations
+---
 
-Winning row highlight
+## 🎨 UI & UX
 
-Smooth transitions
+### 🌙 Modern Dark Mode Theme
 
-Responsive layout for mobile/tablet/desktop
+* Elegant dark UI
+* Neon glow colors for X and O
+* Smooth hover animations
+* Interactive game feedback
 
-♿ Accessibility
+### ✨ Enhanced Experience
 
-ARIA labels for all cells
+* Winning row highlight animation
+* Smooth transitions
+* Responsive layout for:
 
-Live region updates for turn/win messages
+  * Desktop
+  * Tablet
+  * Mobile devices
 
-Full keyboard navigation
+---
 
-🛠️ Tech Stack
+## ♿ Accessibility Features
 
-HTML5
+* ARIA labels for all game cells
+* Live region updates for:
 
-CSS3
+  * Turn changes
+  * Win announcements
+  * Draw messages
+* Full keyboard accessibility:
 
-JavaScript (Vanilla JS)
+  * Arrow key navigation
+  * Enter / Space controls
 
+---
 
+## ⚙️ Usage
 
+Simply open:
 
+```bash id="ly6h7u"
+index.html
+```
 
+in any browser.
 
-/
-├── index.html
-├── styles.css
-└── script.js
+No installation or backend server required.
+
+---
+
+## 🎯 Purpose of the Project
+
+This project demonstrates:
+
+* DOM manipulation using Vanilla JavaScript
+* Game state management
+* Responsive frontend design
+* Accessibility-first development
+* Keyboard interaction handling
+* Clean UI/UX implementation
+
+Perfect for:
+
+* Frontend portfolio projects
+* JavaScript practice
+* UI/UX showcases
+* Frontend assessments
+* Beginner-friendly game development
+
+---
+
+## 👨‍💻 Author
+
+**Sai Karthik**
